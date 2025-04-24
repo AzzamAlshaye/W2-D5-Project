@@ -1,2 +1,141 @@
 * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  background: #fafafa;
+  color: #222;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between left and right sections */
+  align-items: center;
+  padding: 0.9rem;
+  background: #777777;
+  border-bottom: 0.05rem solid #ddd;
+  /* border: purple 2px solid; */
+  border-bottom-right-radius: 0.7rem;
+  border-bottom-left-radius: 0.7rem;
+  position: fixed; /* Keeps the navbar fixed at the top */
+  top: 0; /* Ensures the navbar sticks to the top */
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Keeps it above other content */
+}
+
+.left-section {
+  display: flex;
+  align-items: center; /* Align logo and nav buttons vertically */
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  width: 4rem;
+  height: 4rem;
+  margin-right: 2rem; /* Add space between logo and nav buttons */
+}
+
+.hero-nav {
+  display: flex;
+  gap: 2rem; /* Adds space between Home and Trending buttons */
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+  align-items: center;
+  list-style: none;
+}
+
+.right-section {
+  display: flex;
+  gap: 2rem; /* Adds space between Register and Log In buttons */
+}
+
+/* Wrapper */
+.wrapper {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 6rem 0;
+}
+.hero h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+/* Buttons */
+/* .btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background: #0069ff;
+  color: #fff;
+  border-radius: 0.3rem;
+  font-size: 1.1rem;
+} */
+.btn {
+  padding: 13px 30px;
+  border-radius: 10px;
+  border: 0;
+  background-color: hsl(0, 0%, 95%); /* Light grayish white background */
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Soft dark white shadow */
+  color: hsl(0, 0%, 20%); /* Dark text color for good contrast */
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.btn:active {
+  background-color: hsl(0, 0%, 90%); /* Slightly darker gray when active */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Darker shadow on active state */
+  transform: translateY(5px);
+  transition: 200ms;
+}
+
+.btn-login {
+  background-color: hsl(0, 0%, 20%); /* Dark background */
+
+  color: hsl(0, 0%, 95%); /* Light text color for good contrast */
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  box-shadow: 0px 7px 10px rgba(255, 255, 255, 0.2); /* Lighter shadow on hover */
+}
+
+.btn-login:active {
+  background-color: hsl(0, 0%, 30%); /* Slightly darker gray when active */
+  box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.3); /* Lighter shadow on active state */
+  transform: translateY(5px);
+  transition: 200ms;
+}
+
+.btn.full {
+  width: 100%;
+  text-align: center;
 }
