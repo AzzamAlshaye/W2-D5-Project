@@ -1,0 +1,47 @@
+footer{
+    position: fixed;
+    background-color: #777;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+li{
+    padding-right: 1em;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 0.5em;
+    border-radius: 0.6em;
+}
+
+.app-links{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.9em;
+    text-align: center;
+    justify-content: center;
+    background-color: #565656;
+
+}
+
+button{
+    background-color: black;
+    color: white;
+    padding: 0.5em;
+    border-radius: 0.6em;
+    border: none;
+}
+
+img{
+    height: 50%;
+    width: 60%;
+}
