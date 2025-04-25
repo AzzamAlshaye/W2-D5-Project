@@ -3,6 +3,7 @@
     width: 5rem;
     height: 5rem;
     margin-right: 2rem; /* Add space between logo and nav buttons */
+    margin-left: 1rem;
 }
 
 .box{
@@ -33,14 +34,15 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-
-
+   text-align: center;
 }
 .middle-side-list{
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    padding: 0.5em;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
 }
 
 li{
@@ -61,9 +63,13 @@ a{
 }
 
 .footer-p{
-    font-size: large;
+    font-size: medium;
     padding: 0.8em;
     color: white;
+}
+
+.apps-h{
+  color: white
 }
 
 
