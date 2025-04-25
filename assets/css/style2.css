@@ -1,4 +1,4 @@
-footer{
+/* footer{
     position: fixed;
     background-color: #777;
     left: 0;
@@ -44,4 +44,68 @@ button{
 img{
     height: 50%;
     width: 60%;
+} */
+
+
+
+
+.box{
+    display: flex;
+    background-color: #777;
+    justify-content: space-between;
+    align-items: center;
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+}
+
+.footer-img{
+    width: 10%;
+    height: 10%;
+    border-radius: 1em;
+    padding: 0.2em;
+}
+
+.left-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.middle-side{
+   background-color: #655e73;
+
+}
+.middle-side-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+
+li{
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+    border-radius: 0.6em;
+}
+
+button{
+    background-color: black;
+    color: white;
+    padding: 0.5em;
+    border-radius: 0.6em;
+    border: none;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #565656;
 }
