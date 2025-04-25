@@ -193,6 +193,7 @@ a {
 .wrapper {
   max-width: 60rem;
   margin: 0 auto;
+  margin-bottom: 5rem;
 }
 
 /* Hero */
@@ -400,3 +401,79 @@ a {
   flex-direction: column;
   gap: 1.5em;
 }
+
+/* footer start */
+.footer-logo {
+  font-size: 1.8rem;
+  width: 5rem;
+  height: 5rem;
+  margin-right: 2rem; /* Add space between logo and nav buttons */
+  margin-left: 1rem;
+}
+
+.box {
+  display: flex;
+  background-color: #777;
+  justify-content: center;
+  align-items: center;
+  /* justify-content: center; */
+  /* flex-wrap: wrap; */
+}
+
+.footer-apps-img {
+  width: 35%;
+  height: 35%;
+  border-radius: 1em;
+  padding: 0.5em;
+}
+
+.left-side {
+  display: flex;
+  width: 15%;
+  /* border: rgb(198, 22, 22) 3px solid; */
+}
+
+.middle-side {
+  /* border: 2px solid rgb(7, 0, 90); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.middle-side-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.footer-li {
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.a-footer {
+  color: white;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 3px solid rgb(65, 50, 220); */
+  width: 30%;
+}
+
+.footer-p {
+  font-size: medium;
+  padding: 0.8em;
+  color: white;
+}
+
+.apps-h {
+  color: white;
+}
+
+/* footer end */
