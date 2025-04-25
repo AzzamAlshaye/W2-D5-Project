@@ -4,11 +4,19 @@
     <meta charset="UTF-8" />
     <title>Home | wiki</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <header class="navbar">
       <div class="left-section">
-        <img class="logo" src="./assets/images/logo.png" alt="" />
+        <img
+          class="nav-logo"
+          src="./assets/images/logo-transparent.png"
+          alt="Wikipedia-logo"
+        />
         <!-- <nav class="hero-nav">
           <a href="index.html" class="btn">Home</a>
           <a href="trending.html" class="btn">Trending</a>
@@ -22,6 +30,10 @@
           </li>
         </div>
       </div>
+      <div class="search-nav">
+        <input type="text" placeholder="Search.. 🔎" />
+        <button class="btn" href="#">Search</button>
+      </div>
 
       <div class="nav-links right-section">
         <a href="register.html" class="btn">Register</a>
@@ -30,31 +42,79 @@
     </header>
 
     <main class="wrapper">
-      <section class="hero">
-        <h2>Welcome to our article hub</h2>
-        <p>Discover curated knowledge and share your voice.</p>
-        <a href="trending.html" class="btn">See What's Hot</a>
-        <h2>Welcome to our article hub</h2>
-        <p>Discover curated knowledge and share your voice.</p>
-        <a href="trending.html" class="btn">See What's Hot</a>
-        <h2>Welcome to our article hub</h2>
-        <p>Discover curated knowledge and share your voice.</p>
-        <a href="trending.html" class="btn">See What's Hot</a>
-        <h2>Welcome to our article hub</h2>
-        <p>Discover curated knowledge and share your voice.</p>
-        <a href="trending.html" class="btn">See What's Hot</a>
-        <h2>Welcome to our article hub</h2>
-        <p>Discover curated knowledge and share your voice.</p>
-        <a href="trending.html" class="btn">See What's Hot</a>
-        <h2>Welcome to our article hub</h2>
-        <p>Discover curated knowledge and share your voice.</p>
-        <a href="trending.html" class="btn">See What's Hot</a>
-        <h2>Welcome to our article hub</h2>
-        <p>Discover curated knowledge and share your voice.</p>
-        <a href="trending.html" class="btn">See What's Hot</a>
-      </section>
+      <div class="container">
+        <header class="mainPage-home">
+          <img
+            class="wiki-logo"
+            src="./assets/images/logo-invert.png"
+            alt="Wikipedia-logo"
+          />
+          <div class="tagline">The Free Encyclopedia</div>
+          <div class="search-main search-nav">
+            <input type="text" placeholder="Search.. 🔎" />
+            <button class="btn btn-login" href="#">Search</button>
+          </div>
+        </header>
+        <dev class="dev-footer">
+          <p class="read-lang">Read Wikipedia in your language</p>
+          <div class="language-container">
+            <div class="language-card">
+              <div class="language-name">English</div>
+              <div class="language-stats">6,974,000+ articles</div>
+            </div>
+            <div class="language-card">
+              <div class="language-name">日本語</div>
+              <div class="language-stats">2,050,000+ 記事</div>
+            </div>
+            <div class="language-card">
+              <div class="language-name">中文</div>
+              <div class="language-stats">2,821,000+ 条目</div>
+            </div>
+            <div class="language-card">
+              <div class="language-name">العربية</div>
+              <div class="language-stats">1,470,000+ مقالات</div>
+            </div>
+            <div class="language-card">
+              <div class="language-name">Русский</div>
+              <div class="language-stats">1,144,000+ статей</div>
+            </div>
+            <div class="language-card">
+              <div class="language-name">한국어</div>
+              <div class="language-stats">1,617,000+ 문서</div>
+            </div>
+            <div class="language-card">
+              <div class="language-name">Destach</div>
+              <div class="language-stats">3,000,000+ Artikel</div>
+            </div>
+            <div class="language-card">
+              <div class="language-name">Français</div>
+              <div class="language-stats">2,574,000+ articles</div>
+            </div>
+            <div class="language-card">
+              <div class="language-name">Italiano</div>
+              <div class="language-stats">1,031,000+ articoli</div>
+            </div>
+            <div class="language-card">
+              <div class="language-name">Polski</div>
+              <div class="language-stats">1,562,000+ artykuły</div>
+            </div>
+          </div>
+
+          <div class="icon-buttons">
+            <button class="icon-button" title="View History">
+              <i title="View History" class="fa-solid fa-scroll"></i>
+            </button>
+            <button class="icon-button" title="Random article">
+              <i class="fa-solid fa-shuffle"></i>
+            </button>
+            <button class="icon-button" title="Quick Edit">
+              <i class="fa-solid fa-file-pen"></i>
+            </button>
+          </div>
+        </dev>
+      </div>
     </main>
 
-    <footer class="footer">© 2025 wiki</footer>
+    <footer class="dev-footer">© 2025 wiki</footer>
   </body>
 </html>
