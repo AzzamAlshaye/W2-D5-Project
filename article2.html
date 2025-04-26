@@ -2,11 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Home | wiki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article details | Wikipedia</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/logo-transparent.png"
+      type="image/x-icon"
     />
   </head>
   <body>
@@ -27,17 +34,16 @@
           </li>
         </div>
       </div>
-      <div class="search-nav">
-        <input type="text" placeholder="Search.. 🔎" />
-        <button class="btn" href="#">Search</button>
+      <div class="search-wrapper">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" class="search-nav" placeholder="Search.." />
       </div>
 
       <div class="nav-links right-section">
-        <a href="" class="btn">Register</a>
-        <a href="" class="btn btn-login">Log In</a>
+        <a href="./register.html" class="btn">Register</a>
+        <a href="./login.html" class="btn btn-login">Log In</a>
       </div>
     </header>
-
     <main class="article-wrapper wrapper">
       <section class="article-header">
         <h1 class="article-title">DHL Fastest Lap Award</h1>
@@ -119,11 +125,9 @@
 
       <div class="middle-side">
         <p class="footer-p">
-          Text is available under the Creative Commons Attribution-ShareAlike
-          4.0 License; additional terms may apply. By using this site, you agree
-          to the Terms of Use and Privacy Policy. Wikipedia® is a registered
-          trademark of the Wikimedia Foundation, Inc., a non-profit
-          organization.
+          By using this site, you agree to the Terms of Use and Privacy Policy.
+          Wikipedia® is a registered trademark of the Wikimedia Foundation,
+          Inc., a non-profit organization.
         </p>
 
         <ul class="middle-side-list">
@@ -146,8 +150,6 @@
       </div>
 
       <div class="right-side">
-        <h4 class="apps-h">Download the apps</h4>
-
         <img class="footer-apps-img" src="./assets/images/apple.png" alt="" />
         <img
           class="footer-apps-img"

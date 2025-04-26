@@ -23,7 +23,6 @@ a {
 
 /* html styling */
 
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -82,32 +81,42 @@ a {
 }
 
 /* searchBar css */
-.search-nav a {
+.search-nav {
   float: right;
   display: flex;
-  color: black;
+  color: #333;
+  background-color: #eee;
   text-align: center;
-  padding: 0.75em 0.875em;
+  padding: 0.75em 5em;
+  border-radius: 0.8rem;
   text-decoration: none;
-  font-size: 1.0625rem;
+  /* font-size: 1.0625rem; */
+  font-size: 0.96rem;
+  margin-top: 2rem;
+  font-weight: 900;
+  border: none;
 }
 
-.search-nav a:hover {
-  background-color: #ddd;
+.search-nav:hover {
+  background-color: #ffffff;
   color: black;
 }
-
-.search-nav input[type="text"] {
-  padding: 0.6em;
-  border: none;
-  margin-top: 2.1rem;
-  border-radius: 0.3rem;
-  font-size: 1.0625rem;
-  background-color: #e0e0e0;
+.search-wrapper {
+  position: relative;
+  display: inline-block;
 }
 
-.search-main input[type="text"] {
-  background-color: #ffffff;
+.search-wrapper i {
+  position: absolute;
+  left: 10px;
+  top: 70%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 0.96rem;
+}
+
+.search-main {
+  border: #959595 1px solid;
 }
 /* searchBar css */
 
@@ -120,6 +129,7 @@ a {
   border: 0;
   background-color: hsl(0, 0%, 95%);
   letter-spacing: 0.09375rem;
+  /* font-size: 0.9375rem; */
   font-size: 0.9375rem;
   font-family: "Lato", sans-serif;
   font-weight: 700;
@@ -401,79 +411,144 @@ a {
   flex-direction: column;
   gap: 1.5em;
 }
+/* Register/login Hero */
+.register-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.register-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Register Hero */
+.register-main {
+  text-align: center;
+  padding: 4em 0;
+}
+
+.register-main h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+.register-main p {
+  font-size: 1.4rem;
+}
+.login-field {
+  float: right;
+  display: flex;
+  color: #333;
+  background-color: #eee;
+  text-align: center;
+  padding: 0.75em 5em;
+  border-radius: 0.8rem;
+  text-decoration: none;
+  /* font-size: 1.0625rem; */
+  font-size: 0.96rem;
+  margin-top: 2rem;
+  font-weight: 900;
+  border: none;
+  border: #959595 1px solid;
+}
+
+.login-field:hover {
+  background-color: #ffffff;
+  color: black;
+}
+.wiki-card-login {
+  background-color: #ffffff;
+  padding: 1.5em;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  border: 0.05rem solid #ddd;
+  max-width: 36rem;
+}
+/* Register/login Hero */
 
 /* footer start */
+/* footer start */
 .footer-logo {
-  font-size: 1.8rem;
-  width: 5rem;
-  height: 5rem;
-  margin-right: 2rem; /* Add space between logo and nav buttons */
-  margin-left: 1rem;
+  width: 5em;
+  height: 5em;
+  margin: 0 1em;
 }
 
 .box {
   display: flex;
   background-color: #777;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  /* justify-content: center; */
-  /* flex-wrap: wrap; */
+  padding: 1em 2em;
+  flex-wrap: wrap; /* in case it becomes too narrow */
 }
 
 .footer-apps-img {
-  width: 35%;
-  height: 35%;
+  width: 8em;
+  height: auto;
   border-radius: 1em;
   padding: 0.5em;
 }
 
 .left-side {
   display: flex;
-  width: 15%;
-  /* border: rgb(198, 22, 22) 3px solid; */
+  align-items: center;
+  flex: 0;
+  min-width: 8em;
 }
 
 .middle-side {
-  /* border: 2px solid rgb(7, 0, 90); */
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  flex: 2;
 }
+
 .middle-side-list {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
-  padding: 1em;
-  padding-left: 3em;
-  padding-right: 3em;
+  justify-content: center;
+  gap: 2em;
+  padding: 0;
+  margin: 1em 0 0 0;
+  flex-wrap: wrap;
 }
 
 .footer-li {
   padding: 0.5em;
-  margin: 0.5em;
 }
 
 .a-footer {
+  font-size: 0.9em;
   color: white;
+  text-decoration: none;
 }
 
 .right-side {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: 3px solid rgb(65, 50, 220); */
-  width: 30%;
+  flex: 0;
+  /* margin-left: 2rem; */
 }
 
 .footer-p {
-  font-size: medium;
-  padding: 0.8em;
+  font-size: 1em;
+  padding: 0.5em;
   color: white;
+  text-align: center;
 }
 
 .apps-h {
   color: white;
+  margin-bottom: 0.5em;
 }
+/* footer end */
 
 /* footer end */
